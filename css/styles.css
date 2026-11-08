@@ -1,0 +1,31 @@
+:root {
+  --background: #F8F7F4;
+  --headers: #343330;
+  --text: #565550;
+  --muted: #A6A39B;
+  --link: #8C887D;
+}
+
+body {
+  background-color: var(--background);
+}
+
+h1, h2 {
+  color: var(--headers);
+}
+
+p {
+  color: var(--text);
+}
+
+.container {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 15px;
+  border: 1px solid var(--muted);
+  background-color: var(--background);
+}
+
+.copyright {
+  color: var(--text);
+}
