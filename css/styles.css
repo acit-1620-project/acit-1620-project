@@ -60,3 +60,17 @@ summary + div {
 details[open] summary {
   background: var(--selected);
 }
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.page-link: {
+  color: var(--link);
+}
+
+.page-link:hover {
+  color: var(--hover);
+}
