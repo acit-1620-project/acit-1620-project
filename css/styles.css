@@ -4,6 +4,8 @@
   --text: #565550;
   --muted: #A6A39B;
   --link: #8C887D;
+  --hover: red; /* temporary color */
+  --selected: green; /* temporary color */
 }
 
 body {
@@ -28,4 +30,33 @@ p {
 
 .copyright {
   color: var(--text);
+}
+
+.title {
+  text-align: center;
+}
+
+summary {
+  color: var(--text);
+  border: 1px solid var(--muted);
+  padding: 20px;
+  background: var(--background);
+  margin: 5px;
+}
+
+summary:hover {
+  border-color: var(--hover);
+}
+
+summary + div {
+  color: var(--text);
+  border: 1px solid var(--muted);
+  padding: 10px;
+  background: var(--selected);
+  margin: 5px;
+  word-wrap: break-word;
+}
+
+details[open] summary {
+  background: var(--selected);
 }
