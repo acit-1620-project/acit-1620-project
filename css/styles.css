@@ -4,8 +4,8 @@
   --text: #565550;
   --muted: #A6A39B;
   --link: #8C887D;
-  --hover: red; /* temporary color */
-  --selected: green; /* temporary color */
+  --hover: rgb(31, 152, 168); /* temporary color */
+  --selected: rgb(158, 235, 224); /* temporary color */
 }
 
 body {
@@ -67,10 +67,32 @@ details[open] summary {
   object-fit: contain;
 }
 
-.page-link: {
+.page-link {
   color: var(--link);
 }
 
 .page-link:hover {
   color: var(--hover);
+}
+.bird-facts{
+  width: 100%;
+  border-collapse: collapse;
+  color:var(--text);
+}
+
+.bird-facts caption {
+  text-align: left;
+  margin-bottom : 12px;
+}
+
+.bird-facts th,
+.bird-facts td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--muted);
+}
+
+.bird-facts th {
+  color: var(--headers);
 }
