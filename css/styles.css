@@ -20,6 +20,18 @@ p {
   color: var(--text);
 }
 
+.reference{
+  color: var(--text);
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.reference a{
+  color: var(--text);
+  text-decoration: none;
+  font-size: 10px;
+}
+
 .container {
   max-width: 600px;
   margin: 10px auto;
