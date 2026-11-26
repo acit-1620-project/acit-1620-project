@@ -32,7 +32,7 @@ black
 }
 
 html {
-  background-color: whitesmoke;
+  background-color: var(--deep-mocha);
 }
 
 body {
@@ -47,12 +47,17 @@ p {
   color: var(--text);
 }
 
+.container p {
+  color: whitesmoke;
+}
+
 .container {
   max-width: 600px;
   margin: 10px auto;
   padding: 15px;
+  color: whitesmoke;
   border: 1px solid var(--muted);
-  background-color: var(--background);
+  background-color: var(--granite);
 }
 
 .copyright {
@@ -93,24 +98,18 @@ details[open] summary {
   height: 100%;
   object-fit: contain;
 }
-
-@media {
-  .site-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-}
-
+  
 .site-header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: #4e6151;
-  border-bottom: 1px solid #d5dde0;
+  background-color: var(--granite);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-top: 10px solid var(--deep-mocha);
 }
 
 .page-link {
