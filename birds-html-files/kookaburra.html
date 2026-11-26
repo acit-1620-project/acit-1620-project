@@ -3,23 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kookaburra</title>
+    <title>Laughing Kookaburra</title>
     <link href="../css/styles.css" rel="stylesheet">
   </head>
-  <body>
-
+  
+  <header>
     <div class="container title bird-name">
       <h1>Laughing Kookaburra</h1>
       <p><i>Dacelo novaeguineae</i></p>
     </div>
+  </header>
 
+  <body>
     <div class="container">
       <p>The <i>Laughing Kookaburra</i> is native to the east coast of Australia. A carnivorous bird known for its distinct call, which sounds like a person laughing.</p>
-      <audio controls>
+      <audio controls aria-label="Call of the Laughing Kookaburra">
         <source src="../assets/kookaburra/LaughingKookaburra.ogg" type="audio/ogg">
         Your browser does not support the audio element.
       </audio>
-      <p class="audio-reference"><a href="https://commons.wikimedia.org/wiki/File:LaughingKookaburra.ogg">Kuco</a>, Public domain, via Wikimedia Commons</p>
+      <figcaption> 
+        <a href="https://commons.wikimedia.org/wiki/File:LaughingKookaburra.ogg">Kuco</a>, Public domain, via Wikimedia Commons
+      </figcaption>
     </div>
 
     <div class="container bird-image-container">
@@ -28,7 +32,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container"> <!-- Facts Table -->
       <table>
         <tbody></tbody>
       </table>
@@ -36,10 +40,30 @@
 
     <div class="container">
       <h2>Appearance</h2>
+      <p>The Laughing Kookaburra is a large kingfisher with brown plumage on its back and wings, and a cream-white underbelly and head. They have a bright blue accent on their wings, and a brown spot behind their eyes. Their tails have a brown and black barred pattern.</p>
+      <p>They are best known for their call, or their "laugh". They use their call to establish territory amongst their family groups. The laugh is a learned behaviour, passed down from their parents. Kookaburras raised in captivity do not do the same laugh.</p>
+      <p>Their laugh consists of 5 main parts:</p>
+      <ol>
+        <li>"<i>Kooa</i>"</li>
+        <li>"<i>Cackle</i>"</li>
+        <li>"<i>Rolling</i>"</li>
+        <li>"<i>Ha-ha</i>"</li>
+        <li>Depending on the sex, "<i>Go-go</i>" (Males), or "<i>Gurgle</i>" (Females)</li>
+      </ol>
     </div>
 
     <div class="container">
       <h2>Habitat and Range</h2>
+      <div class="card">
+        <h3>The distribution of the Laughing Kookaburra in Australia</h3>
+        <img src="../assets/kookaburra/range.jpg" alt="A map detailing the habitat range of the Laughing Kookaburra in Australia. It highlights most of Eastern Australia in dark green, and highlights the north of Tazmania and the Southeastern tip of Australia in light green">
+        <figcaption>
+          <p><strong>Dark Green - Native</strong></p>
+          <p><strong>Light Green - Introduced</strong></p>
+          <p>By <a href="//commons.wikimedia.org/w/index.php?title=User:Aa77zz&amp;action=edit&amp;redlink=1" class="new" title="User:Aa77zz (page does not exist)">Aa77zz</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a>, <a href="https://commons.wikimedia.org/wiki/Special:Redirect/page/52071458">Link</a></p>
+        </figcaption>
+      </div>
+      <p></p>
     </div>
 
     <div class="container">
@@ -73,9 +97,11 @@
       <p><a href="../index.html" class="page-link">Back to Main Page</a></p>
     </div>
 
+    
+  </body>
+  <footer>
     <div class="container">
       <p class="copyright">&#169; 2026 Set-A ACIT 1620 Group. All Rights Reserved.</p>
     </div>
-
-  </body>
+  </footer>
 </html>
