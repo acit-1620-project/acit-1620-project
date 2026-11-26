@@ -27,6 +27,8 @@ black
   --text: #565550;
   --muted: #A6A39B;
   --link: #8C887D;
+  --hover: rgb(31, 152, 168); /* temporary color */
+  --selected: rgb(158, 235, 224); /* temporary color */
   --hover: red; /* temporary color */
   --selected: rgb(208, 208, 208); /* temporary color */
 }
@@ -124,6 +126,7 @@ details[open] summary {
   border-top: 10px solid var(--deep-mocha);
 }
 
+.page-link {
 .card {
   border: 1px solid var(--muted);
   margin: 10px;
@@ -144,6 +147,28 @@ details[open] summary {
 
 .page-link:hover {
   color: var(--hover);
+}
+.bird-facts{
+  width: 100%;
+  border-collapse: collapse;
+  color:var(--text);
+}
+
+.bird-facts caption {
+  text-align: left;
+  margin-bottom : 12px;
+}
+
+.bird-facts th,
+.bird-facts td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--muted);
+}
+
+.bird-facts th {
+  color: var(--headers);
 }
 
 table {
