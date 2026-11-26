@@ -1,6 +1,29 @@
+/* 
+Colour Palatte
+
+#94e8b4 - Celadon (Light ocean green)
+#72bda3 - Muted Teal (Medium-light blue-green)
+#5e8c61 - Sea Green (Medium green)
+#4e6151 - Granite (Medium dark green)
+#3b322c - Deep Mocha (Brown)
+
+Text Colours
+
+whitesmoke - white
+black
+*/
+
+
+
 :root {
-  --background: #F8F7F4;
-  --headers: #343330;
+  --celadon: #94e8b4;
+  --muted-teal: #72bda3;
+  --sea-green: #5e8c61;
+  --granite: #4e6151;
+  --deep-mocha: #3b322c;
+  --dark-text: black;
+  --light-text: whitesmoke;
+
   --text: #565550;
   --muted: #A6A39B;
   --link: #8C887D;
@@ -8,6 +31,10 @@
   --selected: rgb(158, 235, 224); /* temporary color */
   --hover: red; /* temporary color */
   --selected: rgb(208, 208, 208); /* temporary color */
+}
+
+html {
+  background-color: var(--deep-mocha);
 }
 
 body {
@@ -22,12 +49,29 @@ p {
   color: var(--text);
 }
 
+.container p {
+  color: var(--light-text);
+}
+
+.reference{
+  color: var(--text);
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.reference a{
+  color: var(--text);
+  text-decoration: none;
+  font-size: 10px;
+}
+
 .container {
   max-width: 600px;
   margin: 10px auto;
   padding: 15px;
+  color: var(--light-text);
   border: 1px solid var(--muted);
-  background-color: var(--background);
+  background-color: var(--granite);
 }
 
 .copyright {
@@ -68,6 +112,19 @@ details[open] summary {
   height: 100%;
   object-fit: contain;
 }
+  
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--granite);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-top: 10px solid var(--deep-mocha);
+}
 
 .page-link {
 .card {
@@ -84,7 +141,7 @@ details[open] summary {
   border: 1px solid var(--hover);
 }
 
-.page-link: {
+.page-link {
   color: var(--link);
 }
 
