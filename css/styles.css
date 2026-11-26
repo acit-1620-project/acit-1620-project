@@ -28,7 +28,7 @@ black
   --muted: #A6A39B;
   --link: #8C887D;
   --hover: red; /* temporary color */
-  --selected: green; /* temporary color */
+  --selected: rgb(208, 208, 208); /* temporary color */
 }
 
 html {
@@ -48,14 +48,26 @@ p {
 }
 
 .container p {
-  color: whitesmoke;
+  color: var(--light-text);
+}
+
+.reference{
+  color: var(--text);
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.reference a{
+  color: var(--text);
+  text-decoration: none;
+  font-size: 10px;
 }
 
 .container {
   max-width: 600px;
   margin: 10px auto;
   padding: 15px;
-  color: whitesmoke;
+  color: var(--light-text);
   border: 1px solid var(--muted);
   background-color: var(--granite);
 }
@@ -112,10 +124,40 @@ details[open] summary {
   border-top: 10px solid var(--deep-mocha);
 }
 
+.card {
+  border: 1px solid var(--muted);
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--background);
+}
+
+.card:hover {
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--selected);
+  border: 1px solid var(--hover);
+}
+
 .page-link {
   color: var(--link);
 }
 
 .page-link:hover {
   color: var(--hover);
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
